@@ -3,6 +3,9 @@
 
 <% @products.each do |product| %>
   <p><%= product %></p>
-  <p><%= product.name %></p>
+  <p><strong><%= product.name %></strong></p>
   <p><%= product.reviews %></p>
+  <% product.reviews.each do |review| %>
+    <p><strong><%= review.user %></strong>: <%= review.body %></p>
+  <% end %>
 <% end %>

@@ -21,9 +21,11 @@ Product.create([
 ])
 
 Review.create([
-  {product_id: 1, user: 'Michael', rating: 4, body: 'Decent graphics, lots of cool games, but no action games.' },
-  {product_id: 1, user: 'Pam', rating: 5, body: 'Great fx, great variety of family games.' },
-  {product_id: 2, user: 'Jim', rating: 5, body: 'Awesome graphics, but sometimes choppy, lots of cool games' },
-  {product_id: 3, user: 'Darryl', rating: 5, body: 'Amazing graphics, lots of cool games...take your panties off.' },
-  {product_id: 1, user: 'Oscar', rating: 5, body: 'You can take all the games with you, it is quite efficient.' },
+  {product_id: 1, user: 'Michael', rating: 4, body: 'Decent graphics, lots of cool games, but no action games.'},
+  {product_id: 1, user: 'Pam', rating: 5, body: 'Great fx, great variety of family games.'},
+  {product_id: 2, user: 'Jim', rating: 5, body: 'Awesome graphics, but sometimes choppy, lots of cool games'},
+  {product_id: 3, user: 'Darryl', rating: 5, body: 'Amazing graphics, lots of cool games...take your panties off.'},
+  {product_id: 5, user: 'Oscar', rating: 5, body: 'You can take all the games with you, it is quite efficient.'},
+  {product_id: 4, user: 'Dwight', rating: 5, body: 'This system is superior to all others. It can assimilate all the best things like the borg.'},
+  {product_id: 5, user: 'Andy', rating: 5, body: 'The OG system, hardcore parkour!'},
 ])
