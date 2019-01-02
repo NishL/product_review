@@ -9,3 +9,6 @@ two:
   name: MyString
   price: 9.99
   active: false
+
+invalid_prod:
+  price: 9.99

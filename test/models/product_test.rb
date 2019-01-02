@@ -4,7 +4,7 @@ class ProductTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
-  # fixtures :products
+  fixtures :products
 
   test "product attributes should not be empty" do
     product = Product.new
@@ -17,5 +17,10 @@ class ProductTest < ActiveSupport::TestCase
     product = Product.new(price: 19.99, active: true)
     assert product.invalid?
 =end  end
+
+  test "this product should not be valid" do
+    product = products(:invalid_prod)
+    assert product.invalid?
+  end
   
 end
