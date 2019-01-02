@@ -15,7 +15,7 @@ class ProductTest < ActiveSupport::TestCase
 =end
   test "name should not be empty" do
     product = Product.new(price: 19.99, active: true)
-    assert product.valid?
+    assert product.invalid?
   end
   
 end
