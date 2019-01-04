@@ -1,9 +1,9 @@
 <h1>Products#index</h1>
 <p>Find me in app/views/products/index.html.erb</p>
 
-<% cache @products do %>
+<% cache @products do %><!--Only re-render the list when a new product is added. -->
   <% @products.each do |product| %>
-    <% cache product do %>
+    <% cache product do %><!--Only re-render a product when it's modified-->
       <p><%= product %></p>
       <p><strong><%= product.name %></strong></p>
       <p><%= product.reviews %></p>
