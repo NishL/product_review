@@ -3,11 +3,13 @@
 
 <% cache @products do %>
   <% @products.each do |product| %>
-    <p><%= product %></p>
-    <p><strong><%= product.name %></strong></p>
-    <p><%= product.reviews %></p>
-    <% product.reviews.each do |review| %>
-      <p><strong><%= review.user %></strong>: <%= review.body %></p>
+    <% cache product do %>
+      <p><%= product %></p>
+      <p><strong><%= product.name %></strong></p>
+      <p><%= product.reviews %></p>
+      <% product.reviews.each do |review| %>
+        <p><strong><%= review.user %></strong>: <%= review.body %></p>
+      <% end %>
     <% end %>
   <% end %>
 <% end %>
