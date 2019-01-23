@@ -6,9 +6,9 @@
   <%= submit_tag('Search' ) %>
 <% end %>
 
-<% cache @products do %><!--Only re-render the list when a new product is added. -->
+<% cache @products do %><% #Only re-render the list when a new product is added %>
   <% @products.each do |product| %>
-    <% cache product do %><!--Only re-render a product when it's modified-->
+    <% cache product do %><% #Only re-render a product when it's modified %>
       <p><%= product %></p>
       <p><strong><%= product.name %></strong></p>
       <p><%= product.reviews %></p>
